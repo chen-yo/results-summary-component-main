@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Reset */
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+
+      @font-face {
+        font-family: "HankenGrotesk";
+        font-display: swap;
+        font-weight: 100 900;
+        src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+          format("truetype");
+      }
+
+      :root {
+        --clr-primary-400: 252, 100%, 67%;
+        --clr-white: 0, 0%, 100%;
+        --font-family-defaut: "HankenGrotesk", sans-serif;
+
+        --clr-light-red: 0 100% 67%;
+        --clr-orangey-yellow: 39 100% 56%;
+        --clr-orangey-yellow: 39 100% 56%;
+        --clr-green-teal: 166 100% 37%;
+        --clr-cobalt-blue: 234 85% 45%;
+
+        --clr-gray0: 0, 0%, 100%, 0.7;
+      }
+
+      body {
+        font-family: "HankenGrotesk";
+        font-size: 400;
+      }
+
+      .colors {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 500px;
+        font-size: 12px;
+      }
+      .colors > div {
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <span>Primary</span>
+        <div class="colors">
+          <div style="background-color: hsl(var(--clr-light-red))">
+            Light Red
+          </div>
+          <div style="background-color: hsl(var(--clr-orangey-yellow))">
+            Orangy yellow
+          </div>
+          <div style="background-color: hsl(var(--clr-green-teal))">
+            Greem Teal
+          </div>
+          <div style="background-color: hsl(var(--clr-cobalt-blue))">
+            Cobalt blue
+          </div>
+        </div>
+
+        <div>
+          <span>Gradients</span>
+          <div class="colors">
+            <div style="background-color:hsl(252, 100%, 67%)">
+              Light slate blue (background): hsl(252, 100%, 67%)
+            </div>
+            <div style="background-color:hsl(241, 81%, 54%)">
+              Light royal blue (background): hsl(241, 81%, 54%)
+            </div>
+            <div style="background-color: hsla(256, 72%, 46%, 1)">
+              Violet blue (circle): hsla(256, 72%, 46%, 1)
+            </div>
+            <div style="background-color: hsla(241, 72%, 46%, 0)">
+              Persian blue (circle): hsla(241, 72%, 46%, 0)
+            </div>
+          </div>
+      </div>
+
+      <div>
+        <span>Neutral</span>
+        <div class="colors">
+          <div style="background-color:hsl(0, 0%, 100%)">
+            White: hsl(0, 0%, 100%)
+          </div>
+          <div style="background-color:#ebf1ff">
+            Pale blue: hsl(221, 100%, 96%)
+          </div>
+          <div style="background-color: hsl(241, 100%, 89%)">
+            Light lavender: hsl(241, 100%, 89%)
+          </div>
+          <div style="background-color: hsl(224, 30%, 27%)">
+            Dark gray blue: hsl(224, 30%, 27%)
+          </div>
+        </div>
+    </div>
+    </main>
+  </body>
+</html>
